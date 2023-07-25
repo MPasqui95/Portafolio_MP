@@ -18,12 +18,43 @@ h3 {
 p {
   font-size: 16px; }
 
+/* <----------------------------------------Media Queries----------------------------------------> */
+@media (min-width: 769px) {
+  h1 {
+    font-size: 40px; }
+  h2 {
+    font-size: 36px; }
+  h3 {
+    font-size: 24px; }
+  p {
+    font-size: 26px; } }
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 50px; }
+  h2 {
+    font-size: 46px; }
+  h3 {
+    font-size: 28px; }
+  p {
+    font-size: 26px; } }
+
 /* <----------------------------------------Header----------------------------------------> */
 .header__logo {
   width: 130px;
   margin-top: 10px;
   margin: 10px; }
 
+/* <----------------------------------------Media Queries----------------------------------------> */
+@media (min-width: 769px) {
+  .header__logo {
+    width: 180px; } }
+
+@media (min-width: 1024px) {
+  .header__logo {
+    width: 230px; } }
+
+/* <----------------------------------------Navbar----------------------------------------> */
 .navbar-nav li :hover {
   color: #EC6216;
   transition: 0.3s linear; }
@@ -58,6 +89,11 @@ p {
 
 #navbarNav {
   text-align: center; }
+
+/* <----------------------------------------Media Queries----------------------------------------> */
+@media (min-width: 769px) {
+  .nav-item {
+    padding: 0 30px; } }
 
 /* <----------------------------------------Index----------------------------------------> */
 .main {
@@ -122,13 +158,34 @@ h1 strong {
 
 .main__btn button:hover {
   transform: translate(0px, -12px);
-  color: #fff; }
+  color: white; }
 
 .main__btn button:hover::after {
   transform: translate(0px, 6px); }
 
 .main__btn button:hover::before {
   transform: translate(0px, 12px); }
+
+/* <----------------------------------------Media Queries----------------------------------------> */
+@media (min-width: 600px) {
+  .main__btn {
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap; }
+  .main__btn button {
+    font-size: 18px; }
+  .main {
+    align-items: center; } }
+
+@media (min-width: 1024px) {
+  .main__bienvenido {
+    color: white;
+    padding: 60px;
+    margin: 10px; }
+  .main__btn button {
+    font-size: 34px;
+    height: 5rem;
+    width: 40%; } }
 
 /* <----------------------------------------Footer----------------------------------------> */
 .footer {
@@ -239,6 +296,15 @@ h1 strong {
 .about__txt p {
   margin: 10px; }
 
+/* <----------------------------------------Media Queries----------------------------------------> */
+@media (min-width: 1024px) {
+  .about nav {
+    flex-direction: row;
+    align-items: center;
+    height: 36rem; }
+  .about img {
+    height: 18rem; } }
+
 /* <----------------------------------------Service----------------------------------------> */
 .service {
   background-color: #d9d9d9;
@@ -279,14 +345,18 @@ h1 strong {
   padding: 8px;
   justify-content: space-evenly; }
 
+/* <----------------------------------------Media Queries----------------------------------------> */
+@media (min-width: 1500px) {
+  .service article {
+    padding: 0px 300px; } }
+
 /* <----------------------------------------Proyects----------------------------------------> */
 .proyects {
   background-color: #d9d9d9;
   width: 100%;
   height: 100vh;
   text-align: center;
-  overflow: scroll; 
-}
+  overflow: scroll; }
 
 .proyects h2 {
   text-align: center;
@@ -308,6 +378,20 @@ h1 strong {
   text-align: left;
   background-color: #EC6216;
   margin: 5px; }
+
+/* <----------------------------------------Media Queries----------------------------------------> */
+@media (min-width: 769px) {
+  .proyects {
+    overflow: scroll; }
+  .proyects__box {
+    flex-wrap: nowrap;
+    width: 80%; }
+  .proyects article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .proyects__box h3 {
+    margin: 20px; } }
 
 /* <----------------------------------------Contact----------------------------------------> */
 .contact {
@@ -390,40 +474,7 @@ h1 strong {
   background-color: #EC6216; }
 
 /* <----------------------------------------Media Queries----------------------------------------> */
-@media (min-width: 600px) {
-  .main__btn {
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap; }
-  .main__btn button {
-    font-size: 18px; } }
-
 @media (min-width: 769px) {
-  h1 {
-    font-size: 40px; }
-  h2 {
-    font-size: 36px; }
-  h3 {
-    font-size: 24px; }
-  p {
-    font-size: 26px; }
-  .nav-item {
-    padding: 0 30px; }
-  .main {
-    align-items: center; }
-  .header__logo {
-    width: 180px; }
-  .proyects {
-    overflow: scroll; }
-  .proyects__box {
-    flex-wrap: nowrap;
-    width: 80%; }
-  .proyects article {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; }
-  .proyects__box h3 {
-    margin: 20px; }
   .contact__datesMessage {
     flex-direction: column; }
   .contact__btnEnviar {
@@ -433,32 +484,6 @@ h1 strong {
     font-size: 24px; } }
 
 @media (min-width: 1024px) {
-  h1 {
-    font-size: 50px; }
-  h2 {
-    font-size: 46px; }
-  h3 {
-    font-size: 28px; }
-  p {
-    font-size: 26px; }
-  .header__logo {
-    width: 230px; }
-  /* Main */
-  .main__bienvenido {
-    color: white;
-    padding: 60px;
-    margin: 10px; }
-  .main__btn button {
-    font-size: 34px;
-    height: 5rem;
-    width: 40%; }
-  /* About */
-  .about nav {
-    flex-direction: row;
-    align-items: center;
-    height: 36rem; }
-  .about img {
-    height: 18rem; }
   .contact__mail,
   .contact__name,
   .contact__tema {
@@ -474,7 +499,5 @@ h1 strong {
     padding: 0px 35px; } }
 
 @media (min-width: 1500px) {
-  .service article {
-    padding: 0px 300px; }
   .contact__btnEnviar button {
     font-size: 24px; } }
