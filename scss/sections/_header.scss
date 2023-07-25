@@ -1,0 +1,23 @@
+/* <----------------------------------------Header----------------------------------------> */
+
+.header__logo{
+    width: 130px;
+    margin-top: 10px;
+    margin: 10px
+}
+
+/* <----------------------------------------Media Queries----------------------------------------> */
+
+@media (min-width: 769px){
+    .header__logo{
+        width: 180px;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    .header__logo{
+        width: 230px;
+    }
+
+}

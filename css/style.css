@@ -285,7 +285,8 @@ h1 strong {
   width: 100%;
   height: 100vh;
   text-align: center;
-  overflow: scroll; }
+  overflow: scroll; 
+}
 
 .proyects h2 {
   text-align: center;
@@ -413,7 +414,7 @@ h1 strong {
   .header__logo {
     width: 180px; }
   .proyects {
-    overflow: hidden; }
+    overflow: scroll; }
   .proyects__box {
     flex-wrap: nowrap;
     width: 80%; }

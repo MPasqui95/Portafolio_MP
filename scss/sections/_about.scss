@@ -1,0 +1,58 @@
+/* <----------------------------------------About----------------------------------------> */
+
+.about{
+    background-color: $gris-claro;
+    width: 100%;
+    height: 100vh;
+   
+}
+.about nav{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.about__txt{
+    padding: 10px;
+    margin-top: 2rem;
+}
+
+.about__img{
+    height: 200px;
+    margin: 20px;
+}
+
+
+.about h2{
+    text-align: center;
+    padding-top: 25px;
+}
+
+.about h3{
+    padding-bottom: 10px;
+    margin: 10px;
+}
+
+.about strong{
+    color: $naranja;
+}
+
+.about__txt p{
+    margin: 10px;
+}
+
+/* <----------------------------------------Media Queries----------------------------------------> */
+
+
+@media(min-width: 1024px) {
+    .about nav{
+        flex-direction: row;
+        align-items: center;
+        height: 36rem;
+    }
+    .about img{
+        height: 18rem;
+    }
+
+}

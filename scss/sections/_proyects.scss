@@ -1,0 +1,55 @@
+/* <----------------------------------------Proyects----------------------------------------> */
+
+.proyects{
+    background-color: $gris-claro;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: scroll;
+}
+.proyects h2{
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.proyects__box img{
+    height: 150px;
+    margin: 10px;
+}
+
+.proyects__box h3{
+    margin: 10px;
+}
+
+.proyects__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 30px solid $gris;
+    text-align: left;
+    background-color: $naranja;
+    margin: 5px;
+}
+
+
+/* <----------------------------------------Media Queries----------------------------------------> */
+
+@media (min-width: 769px){
+    .proyects{
+        overflow: scroll ;
+    }
+    .proyects__box{
+        flex-wrap: nowrap;
+        width: 80%;
+    }
+    .proyects article{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .proyects__box h3{
+        margin: 20px;
+    }
+    
+}

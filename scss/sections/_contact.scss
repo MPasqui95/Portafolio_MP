@@ -1,0 +1,138 @@
+/* <----------------------------------------Contact----------------------------------------> */
+
+.contact{
+    background-color: $gris-claro;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contact h2{
+    text-align: center;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.contact p{
+    padding: 20px;
+    padding-bottom: 0px;
+}
+
+.contact__name {
+    height: 40px;
+    width: 95%;
+    margin: 5px;
+}
+
+.contact__mail{
+    height: 40px;
+    width: 95%;
+    margin: 5px;
+} 
+
+.contact__datesMessage{
+    padding-top: 30px;
+    font-size: 200px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.contact__tema{
+    height: 40px;
+    width: 95%;
+    margin: 5px;
+}
+
+.contact__message{
+    margin: 5px;
+    width: 95%;
+    height: 10rem;
+}
+
+.contact__btnEnviar{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.contact__btnEnviar button{
+    padding: 10px 80px;
+    background-color: $gris;
+    border-radius: 100px;
+    color: $naranja;
+    border: 0px;
+    font-size: 18px;
+}
+
+.contact__name:focus::placeholder,
+.contact__mail:focus::placeholder,
+.contact__tema:focus::placeholder,
+.contact__message:focus::placeholder{
+    color: $naranja;
+}
+.contact__name:focus,
+.contact__mail:focus,
+.contact__tema:focus,
+.contact__message:focus{
+    color: $naranja;
+}
+
+.contact__btnEnviar button:hover{
+    color: white;
+    font-size: 28px;
+    background-color: $naranja;
+}
+.contact__btnEnviar button:active{
+    color: $gris;
+    font-size: 26px;
+    background-color: $naranja;
+}
+
+/* <----------------------------------------Media Queries----------------------------------------> */
+
+@media (min-width: 769px){
+    .contact__datesMessage{
+        flex-direction: column;
+    }
+    .contact__btnEnviar{
+        margin-top: 10px;
+    }
+    .contact__btnEnviar button{
+        margin-top: 10px;
+        font-size: 24px;
+    }
+
+}
+
+@media(min-width: 1024px) {
+    .contact__mail, 
+    .contact__name, 
+    .contact__tema{
+        height: 60px;
+        font-size: 26px;
+    }
+    .contact__message{
+        height: 200px;
+        font-size: 26px;
+    }
+
+    .contact__btnEnviar {
+        margin: 0px;
+        font-size: 24px;
+    }
+
+    .contact p{
+        padding: 0px 35px;
+    }
+
+}
+
+@media (min-width:1500px){
+    .contact__btnEnviar button{
+        font-size: 24px;
+    }
+
+}

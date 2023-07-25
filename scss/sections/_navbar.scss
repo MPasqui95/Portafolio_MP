@@ -1,0 +1,55 @@
+/* <----------------------------------------Navbar----------------------------------------> */
+
+
+.navbar-nav li :hover{
+    color: $naranja;
+    transition: 0.3s linear;
+}
+
+.navbar-nav a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: $naranja;
+    margin: auto;
+    display: block;
+}
+
+.navbar-nav a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+}
+
+#fondoNav{
+    background-color: $gris;
+}
+.nav-link{
+    color:white;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.navbar-toggler{
+    background-color: black;
+    opacity: 0.7;
+    border: solid $naranja 2px;
+
+}
+
+.navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28236, 98, 22, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+#navbarNav{
+    text-align: center;
+}
+
+
+/* <----------------------------------------Media Queries----------------------------------------> */
+
+@media (min-width: 769px){
+    .nav-item{
+        padding: 0 30px;
+    }
+
+}

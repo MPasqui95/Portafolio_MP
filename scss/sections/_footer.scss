@@ -1,0 +1,80 @@
+/* <----------------------------------------Footer----------------------------------------> */
+
+
+.footer{
+    background-color: $gris;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-left: 0;
+}
+
+.footer li{
+    margin: 5px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+    margin: 5px;
+}
+
+.fb a:hover{
+    background: $facebook;
+    font-weight: bold;
+    color: black;
+    border: black solid 4px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: auto;
+    transition: 0.5s ease;
+}
+.ig a:hover{
+    background: $instagram;
+    font-weight: bold;
+    color: black;
+    border: black solid 4px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: auto;
+    transition: 0.5s ease;
+}
+.tw a:hover{
+    background: $twitter;
+    font-weight: bold;
+    color: black;
+    border: black solid 4px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: auto;
+    transition: 0.5s ease;
+}
+.mail a:hover{
+    background: $naranja;
+    font-weight: bold;
+    color: black;
+    border: black solid 4px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: auto;
+    transition: 0.5s ease;
+}
+.ln a:hover{
+    background: $linkedin;
+    font-weight: bold;
+    color: black;
+    border: black solid 4px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: auto;
+    transition: 0.5s ease;
+}
