@@ -309,43 +309,89 @@ h1 strong {
 .service {
   background-color: #d9d9d9;
   width: 100%;
-  height: 100vh;
-  overflow: scroll;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-
-.service article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center; }
+  height: 110vh;
+  overflow: scroll; }
 
 .service h2 {
   text-align: center;
-  padding: 10px;
-  margin-top: 15px; }
+  padding-top: 10px;
+  margin: 0; }
 
-.service__box img {
-  height: 150px; }
-
-.service__box {
-  display: flex;
-  flex-direction: column;
-  border: 30px solid #3A3F45;
+.cardTitle {
+  background-color: #d9d9d9;
+  margin-bottom: 0;
+  color: black;
+  font-weight: bold;
   text-align: center;
-  background-color: #EC6216;
-  margin: 20px;
-  border-radius: 10%;
-  box-shadow: 6px 5px rgba(0, 0, 0, 0.25); }
+  font-size: 24px;
+  margin: 2rem 0 1rem 0; }
 
-.service__box h3 {
+.card {
+  width: 18rem; }
+
+.card-body {
+  text-align: center; }
+
+.card-text {
+  font-size: 18px; }
+
+.allCards {
   display: flex;
-  align-items: center;
-  padding: 8px;
+  flex-wrap: wrap;
   justify-content: space-evenly; }
 
+.cardService {
+  display: flex;
+  flex-direction: column; }
+
+.writeMe {
+  text-decoration: none;
+  text-transform: none;
+  color: white; }
+
+.btn-writeMe {
+  background-color: #EC6216; }
+
+.btn-writeMe:hover {
+  background-color: #d9530b; }
+
+.writeMe:active {
+  color: black; }
+
 /* <----------------------------------------Media Queries----------------------------------------> */
+@media (min-width: 576px) {
+  #cardUxUi {
+    width: 300px; }
+    #cardUxUi .card-body {
+      margin: 0;
+      padding: 9.5px; }
+  .card-img-top-ux {
+    height: 285px;
+    width: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; } }
+
+@media (min-width: 926px) {
+  .service h2 {
+    padding-top: 5px; }
+  .service {
+    overflow: hidden; }
+  #cardUxUi {
+    width: 350px; }
+    #cardUxUi .card-body {
+      margin: 9px 0; }
+    #cardUxUi .card-text {
+      margin: 2px 0 30px 0; }
+  #subDev .card-text {
+    margin: 10px 0 30px 0; }
+  .card-img-top-ux {
+    height: 285px;
+    width: auto;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; }
+  .card-body {
+    padding: 10px; } }
+
 @media (min-width: 1500px) {
   .service article {
     padding: 0px 300px; } }
@@ -427,7 +473,9 @@ h1 strong {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  font-size: 20px; }
+  font-size: 20px;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem; }
 
 .contact__tema {
   height: 40px;
