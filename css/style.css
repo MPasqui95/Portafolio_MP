@@ -266,44 +266,61 @@ h1 strong {
 .about {
   background-color: #d9d9d9;
   width: 100%;
-  height: 100vh; }
+  height: 100%; }
 
 .about nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px; }
+  justify-content: space-evenly; }
 
 .about__txt {
+  width: 70%;
   padding: 10px;
-  margin-top: 2rem; }
+  margin-top: 5px; }
+  .about__txt .txtDescription {
+    font-size: 14px; }
 
 .about__img {
-  height: 200px;
-  margin: 20px; }
+  width: 10rem;
+  margin: 10px;
+  border: 4px solid black;
+  border-radius: 100%;
+  background: radial-gradient(circle, rgba(236, 98, 22, 0.947304) 47%, black 81%); }
 
 .about h2 {
   text-align: center;
-  padding-top: 25px; }
+  padding-top: 20px; }
 
 .about h3 {
   padding-bottom: 10px;
   margin: 10px; }
 
-.about strong {
+.nameMP {
   color: #EC6216; }
 
 .about__txt p {
   margin: 10px; }
 
+.txtDescriptionStrong {
+  font-size: 16px;
+  margin-top: 20px; }
+
 /* <----------------------------------------Media Queries----------------------------------------> */
+@media (min-width: 768px) {
+  .about__txt .txtDescription {
+    font-size: 18px; }
+  .about__txt .txtDescriptionStrong {
+    font-size: 24px; }
+  .about__img {
+    width: 15rem; } }
+
 @media (min-width: 1024px) {
   .about nav {
     flex-direction: row;
-    align-items: center;
-    height: 36rem; }
-  .about img {
-    height: 18rem; } }
+    align-items: center; }
+  .about__img {
+    width: 22rem; } }
 
 /* <----------------------------------------Service----------------------------------------> */
 .service {

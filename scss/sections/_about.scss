@@ -3,30 +3,35 @@
 .about{
     background-color: $gris-claro;
     width: 100%;
-    height: 100vh;
-   
+    height: 100%;
 }
+
 .about nav{
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 10px;
+    justify-content: space-evenly;
 }
 
+
 .about__txt{
+    width: 70%;
     padding: 10px;
-    margin-top: 2rem;
+    margin-top: 5px;
+    .txtDescription{
+        font-size: 14px;
+    }
 }
 
 .about__img{
-    height: 200px;
-    margin: 20px;
-}
-
-
+    width: 10rem;
+    margin: 10px;
+    border: 4px solid black;
+    border-radius: 100%;
+    background: radial-gradient(circle, rgba(236,98,22,0.9473039215686274) 47%, rgba(0,0,0,1) 81%);} 
 .about h2{
     text-align: center;
-    padding-top: 25px;
+    padding-top: 20px;
 }
 
 .about h3{
@@ -34,7 +39,7 @@
     margin: 10px;
 }
 
-.about strong{
+.nameMP{
     color: $naranja;
 }
 
@@ -42,17 +47,36 @@
     margin: 10px;
 }
 
+.txtDescriptionStrong{
+    font-size: 16px;
+    margin-top: 20px;
+}
+
 /* <----------------------------------------Media Queries----------------------------------------> */
+
+@media(min-width:768px){
+    .about__txt{
+        .txtDescription{
+            font-size: 18px;
+        }
+        .txtDescriptionStrong{
+            font-size: 24px;
+        }
+    }
+    .about__img{
+        width: 15rem;
+    }
+}
 
 
 @media(min-width: 1024px) {
     .about nav{
         flex-direction: row;
         align-items: center;
-        height: 36rem;
     }
-    .about img{
-        height: 18rem;
+    .about__img{
+        width: 22rem;
+        
     }
 
 }

@@ -16,6 +16,11 @@
     href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
     rel="stylesheet" />
   <script src="https://kit.fontawesome.com/5c4a94bbfc.js" crossorigin="anonymous"></script>
+  <!-- Animate -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
   <!-- Bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
@@ -56,10 +61,11 @@
     </nav>
   </header>
   <main class="service">
-    <h2>Servicios</h2>
+    <h2 class="animate__animated animate__zoomIn">Servicios</h2>
     <div class="allCards">
       <div class="cardService">
-        <h3 class="cardTitle">Desarrollo Web</h3>
+        <h3 class="cardTitle animate__animated animate__backInDown">Desarrollo Web</h3>
+        <div class="animate__animated animate__backInLeft">
         <div class="card">
           <img src="/sources/img/DesarrolloWeb.png" class="card-img-top" alt="Imagen Card Desarrollo Web" />
           <div class="card-body" id="subDev">
@@ -75,12 +81,14 @@
           <div class="card-body">
             <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modalDev">Ver Mas</a>
           </div>
+        </div>
+      </div>
           <!-- Modal -->
           <div class="modal fade" id="modalDev" tabindex="-1" aria-labelledby="modalDevLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Desarrollo Web</h1>
+                  <h1 class="modal-title fs-5" id="modalDevLabel">Desarrollo Web</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -101,10 +109,10 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
       <div class="cardService">
-        <h3 class="cardTitle">Diseño Ux/Ui</h3>
+        <h3 class="cardTitle animate__animated animate__backInUp">Diseño Ux/Ui</h3>
+        <div class="animate__animated animate__backInUp">
         <div class="card" id="cardUxUi">
           <img src="/sources/img/UxUi.jpg" class="card-img-top-ux" alt="Imagen Card Diseño Ux/Ui" />
           <div class="card-body">
@@ -119,12 +127,14 @@
           <div class="card-body">
             <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modalUxUi">Ver Mas</a>
           </div>
+        </div>
+      </div>
           <!-- Modal -->
           <div class="modal fade" id="modalUxUi" tabindex="-1" aria-labelledby="modalUxUiLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Diseño Ux/Ui</h1>
+                  <h1 class="modal-title fs-5" id="modalUxUiLabel">Diseño Ux/Ui</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -134,7 +144,7 @@
                   boceto hasta el diseño final, mis habilidades en Figma permiten transformar ideas en
                   realidad.
                   <br>
-                  A través de la utilizacion de herramientas como Optimal Workshop, Whismical y de la creación de
+                  A través de la utilizacion de herramientas como Optimal Workshop, Whimsical y de la creación de
                   flowmaps me aseguro que cada página sea increíblemente diseñada,
                   brindando una experiencia de usuario excepcional.
                   <br>
@@ -149,10 +159,10 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
       <div class="cardService">
-        <h3 class="cardTitle">Branding</h3>
+        <h3 class="cardTitle animate__animated animate__backInDown">Branding</h3>
+        <div class="animate__animated animate__backInRight">
         <div class="card">
           <img src="/sources/img/Brand.jpg" class="card-img-top" alt="Imagen Card Branding" />
           <div class="card-body">
@@ -168,12 +178,14 @@
           <div class="card-body">
             <a href="#" class="card-link" data-bs-toggle="modal" data-bs-target="#modalBrand">Ver Mas</a>
           </div>
+        </div>
+      </div>
           <!-- Modal -->
           <div class="modal fade" id="modalBrand" tabindex="-1" aria-labelledby="modalBrandLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="exampleModalLabel">Branding</h1>
+                  <h1 class="modal-title fs-5" id="modalBrandLabel">Branding</h1>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -195,7 +207,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </main>
