@@ -15,7 +15,6 @@
 
 
 .about__txt{
-    width: 70%;
     padding: 10px;
     margin-top: 5px;
     .txtDescription{
@@ -28,7 +27,9 @@
     margin: 10px;
     border: 4px solid black;
     border-radius: 100%;
-    background: radial-gradient(circle, rgba(236,98,22,0.9473039215686274) 47%, rgba(0,0,0,1) 81%);} 
+    background: radial-gradient(circle, rgba(236,98,22,0.9473039215686274) 47%, rgba(0,0,0,1) 81%);
+} 
+
 .about h2{
     text-align: center;
     padding-top: 20px;
@@ -52,6 +53,40 @@
     margin-top: 20px;
 }
 
+.allAccordion{
+    padding: 0 15px 20px 15px;
+}
+
+.toolsTitle{
+    font-weight: bold;
+    text-decoration: underline !important;
+    margin-top: 25px !important;
+}
+
+.accordion-button {
+    background: $gris-claro;
+}
+
+.accordion-item{
+    background: rgba(0, 0, 0, 0.338);
+    border: 2px solid black;
+    .accordion-header{
+        padding: 0;
+    }
+}
+
+.accordion-button:active {
+    background: $naranja;
+}
+
+.accordion-button:not(.collapsed){
+    background-color: $naranja;
+}
+
+.imgTools{
+    width: 100%;
+}
+
 /* <----------------------------------------Media Queries----------------------------------------> */
 
 @media(min-width:768px){
@@ -66,6 +101,10 @@
     .about__img{
         width: 15rem;
     }
+    .toolsTitle{
+        font-size: 24px;
+    }
+    
 }
 
 
