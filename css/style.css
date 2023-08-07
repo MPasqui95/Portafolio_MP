@@ -205,23 +205,16 @@ h1 strong {
   padding-left: 0; }
 
 .footer li {
-  margin: 5px; }
+  margin: 6px; }
 
 .footer a {
   text-decoration: none;
   color: white;
   margin: 5px; }
 
-.fb a:hover {
-  background: #3b5998;
-  font-weight: bold;
-  color: black;
-  border: black solid 4px;
-  padding: 10px;
-  border-radius: 10px;
-  font-size: 18px;
-  margin: auto;
-  transition: 0.5s ease; }
+.ig img {
+  width: 2rem;
+  margin-bottom: 4px; }
 
 .ig a:hover {
   background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
@@ -234,8 +227,12 @@ h1 strong {
   margin: auto;
   transition: 0.5s ease; }
 
-.tw a:hover {
-  background: #00acee;
+.git img {
+  width: 2rem;
+  margin-bottom: 4px; }
+
+.git a:hover {
+  background: #f6f8fa;
   font-weight: bold;
   color: black;
   border: black solid 4px;
@@ -244,6 +241,10 @@ h1 strong {
   font-size: 18px;
   margin: auto;
   transition: 0.5s ease; }
+
+.mail img {
+  width: 2.5rem;
+  margin-bottom: 4px; }
 
 .mail a:hover {
   background: #EC6216;
@@ -255,6 +256,10 @@ h1 strong {
   font-size: 18px;
   margin: auto;
   transition: 0.5s ease; }
+
+.ln img {
+  width: 2rem;
+  margin-bottom: 4px; }
 
 .ln a:hover {
   background: #0e76a8;
